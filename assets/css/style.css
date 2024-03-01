@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton';
+}
+@keyframes title{
+    
+    0% {
+        opacity: 0;
+        transform: translateX(-600px);
+    }
+    
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/*  HEADER - HERO  */
+
+.hero {
+    height: 100vh;
+    background-color: aqua;
+    background-image: url('../img/Circuitos-de-Musculacao-para-per.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero .opacidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-left: 20px;
+}
+.hero .logo {
+    display: flex;
+    align-items: center;
+    animation: title;
+    animation-duration: 1.3s;
+}
+.hero .logo img {
+    width: 90px;
+    height: 90px;
+}
+.hero .logo h2 {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+.hero .hero-title h1 {
+    text-transform: uppercase;
+    font-size: 100px;
+    color: white;
+    line-height: 100px;
+    padding-bottom: 30px;
+    animation: title;
+    animation-duration: 1s;
+}
+.hero .hero-title span {
+    color: #FF383E;
+}
+
+
+
+/*  AREA - 01  */
+
+
+.area1 {
+    height: 100vh;
+    background-color: #ff383e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.area1 h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 100px;
+    line-height: 115px;
+    padding-bottom: 30px;
+    text-shadow: 4px 1px 5px black;
+    
+}
+.area1 p {
+    font-size: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    padding-bottom: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+.area1 .buttons {
+    text-transform: uppercase;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.area1 .button {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+.area1 .button:hover {
+    color: #FF383E;
+    background-color: white;
+    transition: all, 0.4s;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+
+
+/*  AREA-02  */
+
+
+.area2 {
+    height: 100vh;
+    background-image: url('../img/abbds.webp');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.opacidade {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.area2 .area2-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+.area2-left h2 {
+    font-size: 100px;
+    line-height: 110px;
+    color: #FF383E;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+.area2-left p {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 270px;
+    padding-bottom: 50px;
+}
+
+
+
+.area2 .area2-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 70px;
+    padding: 50px 0px;
+    
+}
+.area2-right .infos {
+    display: flex;
+    align-items: center;
+    
+}
+.area2-right .infos h3 {
+    text-transform: uppercase;
+    color: #FF383E;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 300;
+    padding-right: 30px;
+    width: 150px;
+    
+}
+.area2-right .infos p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    width: 380px;
+}
+
+
+
+/*  AREA-03  */
+
+
+.area3 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area3 .area3-left {
+    background-color: #FF383E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 50px;
+}
+.area3 .area3-left h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 100px;
+    line-height: 110px;
+    text-shadow: 4px 1px 5px black;
+}
+
+.area3 .infos p {
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 290px;
+    padding-bottom: 30px;
+} 
+.area3 .infos .button {
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+.area3 .infos .button:hover {
+    color: #FF383E;
+    background-color: white;
+    transition: all, 0.4s;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+
+.area3 .area3-right {
+    background-image: url('../img/womean.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.area3 .area3-right .opacidade {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/*  AREA-04  */
+
+.area4 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #000000;
+    height: 100vh;
+}
+.area4 .avali {
+    margin: auto;
+}
+.area4 .avali img {
+    width: 60px;
+    height: 90px;
+    padding-bottom: 30px;
+}
+.area4 .avali p {
+    width: 300px;
+    line-height: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+.area4 .avali h3 {
+    font-size: 30px;
+    color: #FF383E;
+    font-weight: 400;
+}
+
+
+
+/*  FOOTER  */
+
+footer {
+    background-image: url('../img/bgfinal.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+footer .opacidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 50px 30px;
+}
+footer h2 {
+    color: #FF383E;
+    font-size: 90px;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+footer .infos p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 350px;
+}
+footer .infos p b {
+    font-weight: 400;
+}
+footer .infos p a {
+    text-decoration: none;
+    color: white;
+}
+footer .infos p a:hover {
+    color: #FF383E;
+}
+
